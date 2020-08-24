@@ -7560,6 +7560,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="38.608" y="114.046" size="1.778" layer="97">Power</text>
 <wire x1="0" y1="68.58" x2="248.92" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <text x="63.5" y="60.96" size="2.54" layer="97" align="center">Connectors</text>
+<text x="167.64" y="10.16" size="2.54" layer="94">Priyanka Makin</text>
 </plain>
 <instances>
 <instance part="JP3" gate="G$1" x="246.38" y="30.48" smashed="yes"/>
