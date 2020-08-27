@@ -150,8 +150,8 @@
 <library>
 <packages>
 <package name="0603_CASTELLATED">
-<pad name="P$1" x="-0.5334" y="0" drill="0.3048" diameter="0.6096"/>
-<pad name="P$2" x="0.5334" y="0" drill="0.3048" diameter="0.6096"/>
+<pad name="P$1" x="-0.5334" y="0" drill="0.5588" diameter="0.6604"/>
+<pad name="P$2" x="0.5334" y="0" drill="0.5588" diameter="0.6604"/>
 </package>
 </packages>
 <symbols>
