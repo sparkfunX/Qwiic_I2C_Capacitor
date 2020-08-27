@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -150,8 +150,16 @@
 <library>
 <packages>
 <package name="0603_CASTELLATED">
-<pad name="P$1" x="-0.5334" y="0" drill="0.5588" diameter="0.6604"/>
-<pad name="P$2" x="0.5334" y="0" drill="0.5588" diameter="0.6604"/>
+<pad name="1" x="-0.508" y="0" drill="0.5588" diameter="0.5588"/>
+<pad name="2" x="0.508" y="0" drill="0.5588" diameter="0.5588"/>
+<rectangle x1="0.127" y1="0" x2="0.889" y2="0.762" layer="16"/>
+<rectangle x1="-0.9398" y1="0" x2="-0.0762" y2="0.8128" layer="30"/>
+<rectangle x1="-0.9398" y1="0" x2="-0.0762" y2="0.8128" layer="29"/>
+<rectangle x1="-0.889" y1="0" x2="-0.127" y2="0.762" layer="16"/>
+<rectangle x1="-0.889" y1="0" x2="-0.127" y2="0.762" layer="1"/>
+<rectangle x1="0.127" y1="0" x2="0.889" y2="0.762" layer="1"/>
+<rectangle x1="0.0762" y1="0" x2="0.9398" y2="0.8128" layer="29"/>
+<rectangle x1="0.0762" y1="0" x2="0.9398" y2="0.8128" layer="30"/>
 </package>
 </packages>
 <symbols>
@@ -176,8 +184,8 @@
 <devices>
 <device name="" package="0603_CASTELLATED">
 <connects>
-<connect gate="J1" pin="1" pad="P$1"/>
-<connect gate="J1" pin="2" pad="P$2"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
