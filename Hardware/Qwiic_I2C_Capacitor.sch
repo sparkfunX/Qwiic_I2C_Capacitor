@@ -5860,7 +5860,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="237.744" y="7.366" size="2.54" layer="94">x01</text>
+<text x="237.744" y="7.366" size="2.54" layer="94">x02</text>
 <text x="43.688" y="98.806" size="1.778" layer="97">Power</text>
 <wire x1="0" y1="68.58" x2="76.2" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <text x="66.04" y="55.88" size="2.54" layer="94" align="center">Connectors</text>
@@ -5998,13 +5998,13 @@ I2C Address for NCD2400M1: 0x61</text>
 <label x="76.2" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
-<label x="111.76" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="U1" pin="SDA"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="129.54" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
-<junction x="116.84" y="124.46"/>
+<pinref part="U1" gate="U1" pin="SCL"/>
+<wire x1="142.24" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="119.38" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="119.38" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
+<junction x="132.08" y="119.38"/>
+<label x="114.3" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6019,13 +6019,13 @@ I2C Address for NCD2400M1: 0x61</text>
 <label x="76.2" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="111.76" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
-<label x="111.76" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="U1" pin="SCL"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="129.54" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
-<junction x="132.08" y="119.38"/>
+<pinref part="U1" gate="U1" pin="SDA"/>
+<wire x1="142.24" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="124.46" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<junction x="116.84" y="124.46"/>
+<label x="114.3" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
