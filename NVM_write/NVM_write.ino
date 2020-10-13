@@ -7,74 +7,60 @@ void setup() {
   Wire.begin();
   Serial.begin(115200);
 
-//  //Write 0x123 to volatile memory
-//  Wire.beginTransmission(address);
-//  Wire.write(0x01);
-//  Wire.write(0x23);
-//
-//  if (Wire.endTransmission() == 0)
-//    Serial.println("Successful write to volatile memory");
-//  else {
-//    Serial.println("Wire transmission not successful. Freezing");
-//    while(1);
-//  }
+  Serial.println("Write 0x7D to NVM");
 
-  //Write 0x46 to non-volatile memory
-  //First, erase NVM
-  Wire.beginTransmission(address);
-  //Config 1
-  Wire.write(0xC0);
-  //Config 0
-  Wire.write(0x00);
-  //Wait
-  Wire.write(0x00);
-  Wire.endTransmission();
-
-  Wire.beginTransmission(address);
-  //Config 1
-  Wire.write(0xA0);
-  //Config 0
-  Wire.write(0x00);
-  //Wait
-  Wire.write(0x00);
-  Wire.endTransmission();
-
+  
+  //Clear NV address 0x0
   Wire.beginTransmission(address);
   //Config 1
   Wire.write(0x80);
   //Config 0
-  Wire.write(0x00);
+  Wire.write(0xF0);
   //Wait
-  Wire.write(0x00);
+  Wire.write(0xFF);
   Wire.endTransmission();
 
-  //Then, write to NVM
-  Wire.beginTransmission(address);
-  //Config 1
-  Wire.write(0xC0);
-  //Config 0
-  Wire.write(0x00);
-  //Wait
-  Wire.write(0x00);
-  Wire.endTransmission();
-
-  Wire.beginTransmission(address);
-  //Config 1
-  Wire.write(0xA0);
-  //Config 0
-  Wire.write(0x04);
-  //Wait
-  Wire.write(0x00);
-  Wire.endTransmission();
-
+  //Write 0xD to NV address 0x0
   Wire.beginTransmission(address);
   //Config 1
   Wire.write(0x80);
   //Config 0
-  Wire.write(0x06);
+  Wire.write(0xFD);
   //Wait
-  Wire.write(0x00);
+  Wire.write(0xFF);
   Wire.endTransmission();
+
+  //Clear NV address 0x1
+  Wire.beginTransmission(address);
+  //Config 1
+  Wire.write(0xA0);
+  //Config 0
+  Wire.write(0xF0);
+  //Wait
+  Wire.write(0xFF);
+  Wire.endTransmission();
+
+  //Write 0x7 to NV address 0x1
+  Wire.beginTransmission(address);
+  //Config 1
+  Wire.write(0xA0);
+  //Config 0
+  Wire.write(0xF7);
+  //Wait
+  Wire.write(0xFF);
+  Wire.endTransmission();
+
+  //Clear NV address 0x2
+  Wire.beginTransmission(address);
+  //Config 1
+  Wire.write(0xC0);
+  //Config 0
+  Wire.write(0xF0);
+  //Wait
+  Wire.write(0xFF);
+  Wire.endTransmission();
+
+
   
   //This is the read function
   Wire.requestFrom(address, 4);
@@ -83,6 +69,12 @@ void setup() {
     Serial.print("0x");
     Serial.println(temp, HEX);
   }
+  
+    //Set NVM mode -- I think this works
+  Wire.beginTransmission(address);
+  Wire.write(0x90);
+  Wire.write(0xFF);
+  Wire.endTransmission();
 }
 
 void loop() {
