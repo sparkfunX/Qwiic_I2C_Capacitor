@@ -1,17 +1,10 @@
-SparkFun Qwiic Humidity AHT20
+SparkFun Qwiic Digital Capacitor
 =============================
-
-[![Qwiic AHT20](https://cdn.sparkfun.com/assets/parts/1/5/5/0/2/16618-Qwiic_Humidity_AHT20-01.jpg)](https://cdn.sparkfun.com/assets/parts/1/5/5/0/2/16618-Qwiic_Humidity_AHT20-01.jpg)
-
-New from SparkX, the AHT20 breakout board. This low-cost IC triggers temperature and humidity measurements easily over the Qwiic bus you know and love.
-
-SparkFun labored with love to design this board. Feel like supporting open-source hardware?
-Buy a [board](https://www.sparkfun.com/) from SparkFun!
 
 Repository Contents
 -------------------
 
-* **/Documents** - Datasheet for the AHT20 IC.
+* **/Documents** - Datasheet for the NCD2400M IC.
 * **/Hardware** - Eagle design files (.brd, .sch).
 * **/Production** - Production panel files (.brd).
 
