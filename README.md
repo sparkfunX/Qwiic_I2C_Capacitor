@@ -1,7 +1,7 @@
 SparkFun Qwiic Digital Capacitor
 =============================
 
-![SparkFun Qwiic Digital Capacitor - NCD2400M](https://cdn.sparkfun.com/assets/parts/1/6/1/6/0/17182-Digital_Capacitor-01.jpg)]
+![SparkFun Qwiic Digital Capacitor - NCD2400M](https://cdn.sparkfun.com/assets/parts/1/6/1/6/0/17182-Digital_Capacitor-01.jpg)
 
 [*SparkFun Qwiic Digital Capacitor NCD2400M (SPX- 17182)*](https://www.sparkfun.com/products/17182) 
 
