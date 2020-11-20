@@ -1,5 +1,8 @@
 SparkFun Qwiic Digital Capacitor
 =============================
+[*SparkFun Qwiic Digital Capacitor NCD2400M (SPX- 17182)*](https://www.sparkfun.com/products/17182) 
+
+Ever need to fine tune an oscillator circuit or RF filter? It can be tricky and repetitive switching out capacitors on a PCB. The Qwiic Digital Capacitor, complete with the NCD2400M IC, can be a great solution. Solder the nibs onto any 0603 or 0402 footprint, plug in a Qwiic cable and RedBoard, and change the capacitance in code.
 
 Repository Contents
 -------------------
@@ -7,6 +10,10 @@ Repository Contents
 * **/Documents** - Datasheet for the NCD2400M IC.
 * **/Hardware** - Eagle design files (.brd, .sch).
 * **/Production** - Production panel files (.brd).
+
+Documentation
+-------------
+* **[Arduino Library](https://github.com/sparkfun/SparkFun_Qwiic_Digital_Capacitor_Arduino_Library)** - Arduino library for the SparkFun Qwiic Digital Capacitor - NCD2400M.
 
 License Information
 -------------------
